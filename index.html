@@ -27,12 +27,38 @@
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/lib/venobox/venobox.css" rel="stylesheet">
-    <!-- <link href="assets/css/swipe.css" rel="stylesheet"> -->
+    <link href="assets/css/swipe.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
 
+    <style>
+        /* external css: flickity.css */
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .gallery {
+            background: #EEE;
+        }
+
+        .gallery-cell {
+            width: 20%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            counter-increment: gallery-cell;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -313,7 +339,7 @@
         </section>
         <!-- End More Services Section -->
         <!-- trial carousel -->
-        <section id="swipe" class="wow fadeInUp">
+        <!-- <section id="swipe" class="wow fadeInUp">
 
             <div class="container">
                 <div class="section-header">
@@ -342,8 +368,39 @@
                         src="assets/imgs/board meeting.webp" alt=""></a>
             </div>
 
-        </section>
+        </section> -->
+
         <!-- trial carousel end  -->
+
+
+        <!-- new swipe codepen -->
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url(assets/imgs/entrepreneurship2.webp); background-size: contain;">
+            </div>
+        </div>
+        <!-- new swipe codepen end -->
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
             <div class="container">
@@ -1075,9 +1132,12 @@
     <script src=" assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
     <script src=" assets/vendor/venobox/venobox.min.js "></script>
     <script src=" assets/vendor/aos/aos.js "></script>
-
-    <!-- Template Main JS File -->
-    <script src=" assets/js/main.js "></script>
+    <script src=" assets/js/js/swipe.js"></script>
+                                    <script src="assets/lib/venobox/venobox.js"></script>
+                                    <script src="assets/lib/venobox/venobox.min.js"></script>
+                                    <script src=" assets/js/main.js "></script>
+                                    <script
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 
 </body>
 
