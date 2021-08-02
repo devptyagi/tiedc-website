@@ -401,20 +401,16 @@
         </div>
         <center>
             <p>
-                <button class="btn btn-primary1" type="button" data-toggle="collapse" data-target="#collapseExample1"
-                    aria-expanded="false" aria-controls="collapseExample1" style="color: #3498db; border: 2px">
+                <button class="btn btn-primary1" type="button" onclick="openme(0)" style="color: #3498db; border: 2px">
                     FACULTY ADVISOR
                 </button>
-                <button class="btn btn-primary1" type="button" data-toggle="collapse" data-target="#collapseExample2"
-                    aria-expanded="true" aria-controls="collapseExample2" style="color: #3498db; border: 2px">
+                <button class="btn btn-primary1" type="button" onclick="openme(1)" style="color: #3498db; border: 2px">
                     MENTORS
                 </button>
-                <button class="btn btn-primary1" type="button" data-toggle="collapse" data-target="#collapseExample4"
-                    aria-expanded="true" aria-controls="collapseExample4" style="color: #3498db; border: 2px">
+                <button class="btn btn-primary1" type="button" onclick="openme(2)" style="color: #3498db; border: 2px">
                     CO-ORDINATORS
                 </button>
-                <button class="btn btn-primary1" type="button" data-toggle="collapse" data-target="#collapseExample3"
-                    aria-expanded="false" aria-controls="collapseExample3" style="color: #3498db; border: 2px">
+                <button class="btn btn-primary1" type="button" onclick="openme(3)" style="color: #3498db; border: 2px">
                     TEAM HEADS
                 </button>
             </p>
@@ -569,7 +565,7 @@
         </div>
         <!-- ADVISOR SECTION ENDS -->
 
-        <div class="collapse" id="collapseExample4">
+        <div class="collapse" id="collapseExample3">
 
             <div class="card card-body">
 
@@ -624,7 +620,7 @@
         </div>
 
         <!-- TEAM HEAD SECTION -->
-        <div class="collapse show" id="collapseExample3">
+        <div class="collapse showme" id="collapseExample4">
 
             <div class="card card-body">
 
@@ -710,6 +706,44 @@
                 </section>
             </div>
         </div>
+
+        
+        <style>
+            .showme {
+                display: block !important;
+                animation: fade-in 0.5s;
+            }
+
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                    }
+                to {
+                    opacity: 1;
+                    }
+            }
+        </style>
+
+        <script>
+            keys = [document.getElementById('collapseExample1'),document.getElementById('collapseExample2'),document.getElementById('collapseExample3'),document.getElementById('collapseExample4')]
+
+            function openme(key){
+                
+                if(keys[key].className !== "collapse showme")
+                {
+                    for(i =  0 ; i < keys.length; i++)
+                        keys[i].className = "collapse";
+                    keys[key].className = "collapse showme"
+                    for(i =  0 ; i < keys.length; i++)
+                        console.log(keys[i].className);
+                }
+                // else
+                // {
+                //     keys[key].className = "collapse"
+                // }
+            }
+        </script>
+
         <!-- TEAM HEAD SECTION ENDS -->
         <section id="memberofthemonth" class="testimonials section-bg">
             <div class="container">
