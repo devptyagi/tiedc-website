@@ -404,11 +404,11 @@
                 <button class="btn btn-primary1" type="button" onclick="openme(0)" style="color: #3498db; border: 2px">
                     FACULTY ADVISOR
                 </button>
-                <button class="btn btn-primary1" type="button" onclick="openme(1)" style="color: #3498db; border: 2px">
-                    MENTORS
-                </button>
                 <button class="btn btn-primary1" type="button" onclick="openme(2)" style="color: #3498db; border: 2px">
                     CO-ORDINATORS
+                </button>
+                <button class="btn btn-primary1" type="button" onclick="openme(1)" style="color: #3498db; border: 2px">
+                    MENTORS
                 </button>
                 <button class="btn btn-primary1" type="button" onclick="openme(3)" style="color: #3498db; border: 2px">
                     TEAM HEADS
@@ -707,7 +707,7 @@
             </div>
         </div>
 
-        
+
         <style>
             .showme {
                 display: block !important;
@@ -717,30 +717,24 @@
             @keyframes fade-in {
                 from {
                     opacity: 0;
-                    }
+                }
+
                 to {
                     opacity: 1;
-                    }
+                }
             }
         </style>
 
         <script>
-            keys = [document.getElementById('collapseExample1'),document.getElementById('collapseExample2'),document.getElementById('collapseExample3'),document.getElementById('collapseExample4')]
+            keys = [document.getElementById('collapseExample1'), document.getElementById('collapseExample2'), document.getElementById('collapseExample3'), document.getElementById('collapseExample4')]
 
-            function openme(key){
-                
-                if(keys[key].className !== "collapse showme")
-                {
-                    for(i =  0 ; i < keys.length; i++)
+            function openme(key) {
+
+                if (keys[key].className !== "collapse showme") {
+                    for (i = 0; i < keys.length; i++)
                         keys[i].className = "collapse";
                     keys[key].className = "collapse showme"
-                    // for(i =  0 ; i < keys.length; i++)
-                    //     console.log(keys[i].className);
                 }
-                // else
-                // {
-                //     keys[key].className = "collapse"
-                // }
             }
         </script>
 
