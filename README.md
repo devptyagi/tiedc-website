@@ -8,6 +8,3 @@ The Technology Incubation and Entrepreneurship Development cell of JUIT aims at 
 <img src="screens/2.png">
 <img src="screens/3.png">
 <img src="screens/4.png">
-
-
-[![instagram](https://github.com/shikhar1020jais1/Git-Social/blob/master/Icons/Instagram.png (Instagram))][2]  [![linkedin](https://github.com/shikhar1020jais1/Git-Social/blob/master/Icons/LinkedIn.png (LinkedIn))][4]
